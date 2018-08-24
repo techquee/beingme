@@ -14,7 +14,7 @@
             i++;
         });
         
-        $('.menu footer button').on('click',function(e){
+        $('.menu').on('click',function(e){
             e.preventDefault();
             $els.each(function(j){
                 $(this).css('--top',$(this)[0].getBoundingClientRect().top + ($(this).attr('data-group') * -15) - 20);
